@@ -1,9 +1,3 @@
-<style>
-H1{color:Blue !important;}
-H2{color:DarkOrange !important;}
-p{color:Black !important;}
-</style>
-
 # WAZUH Active-Response : Remove-Threat by CDB List from Linux
 
 ## Scenario
@@ -203,4 +197,29 @@ I add the following lines to the agent.conf file so that both the /root director
 
 ## Attack emulation
 
+### 1-) Create Test File and Get MD5
+
+	cd /var
+
+	touch remove-threat-test.txt
+
+	md5sum remove-threat-test.txt
+
+![Wazuh-Active-Response](1.png)
+
+### 2-) Add your malicious MD5s to the file from WebUI
+
+![Wazuh-Active-Response](2.png)
+
+![Wazuh-Active-Response](3.png)
+
+### 3-) Move Test File to /root directory from /var
+
+	mv /var/remove-threat-test.txt /root/
+
+### 4-) See Actions from Discover Page
+
+![Wazuh-Active-Response](4.png)
+
+![Wazuh-Active-Response](5.png)
 
