@@ -110,7 +110,7 @@ Restart the Wazuh manager to apply the configuration changes:
 
 	sudo systemctl restart wazuh-manager
 
-### 5-) Deploy Tool amd Config
+### 5-) Deploying Tool and Config
 
 Note: I had previously divided agents into groups according to their operating systems, you can change the directories here according to the default or the directory you have configured yourself.
 
@@ -195,7 +195,7 @@ I add the following lines to the agent.conf file so that both the /root director
 		</syscheck>
 	</agent_config>
 
-## Attack emulation
+## Attack Simulation
 
 ### 1-) Create Test File and Get MD5
 
