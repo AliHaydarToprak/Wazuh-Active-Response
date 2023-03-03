@@ -307,12 +307,6 @@ I add the following lines to the agent.conf file so that both the /root director
 
 ### 1-) Create Test File and Get MD5
 
-	cd /var
-
-	touch remove-threat-test.txt
-
-	md5sum remove-threat-test.txt
-
 ![Wazuh-Active-Response](1.png)
 
 ### 2-) Add your malicious MD5s to the file from WebUI
