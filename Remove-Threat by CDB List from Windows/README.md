@@ -289,7 +289,7 @@ Restart the Wazuh manager to apply the configuration changes:
 
 Note: I had previously divided agents into groups according to their operating systems, you can change the directories here according to the default or the directory you have configured yourself.
 
-First of all, I create my .sh file that will take action under the file that will provide distribution to Windows.
+First of all, go to drictory.
 
 	cd /var/ossec/etc/shared/Windows/
 
